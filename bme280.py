@@ -23,6 +23,6 @@ while True:
         print 'Pressure = {:0.0f}hPa'.format(hpa)
         print 'Pressure = {:0.2f}inHg'.format(inHg)
         print 'Sea Level Pressure = {:0.0f}hPa'.format(seaLevelh)
-        print 'Sea Level Pressure = {:0.4f}inHg'.format(seaLeveli)
+        print 'Sea Level Pressure = {:0.2f}inHg'.format(seaLeveli)
         print '----------------------'
         time.sleep(15)
