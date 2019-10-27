@@ -13,12 +13,16 @@ while True:
         fah = (temperature  * 1.8) + 32
         hpa = pressure / 100
         inHg = pressure * 0.00029530
-        seaLevelh = hpa*(1-(0.0065*elevation)/(temperature+(0.0065*elevation)+273.15))**-5.257 
+        seaLevelh = hpa*(1-(0.0065*elevation)/(temperature+(0.0065*elevation)+273.15))**-5.257
         seaLeveli = seaLevelh * 0.029530
+        dewPoint = temperature-((100 - humidity)/5)
+        dewPointf = (dewPoint * 1.8) + 32
 
         print 'Temperature = {:0.1f}F'.format(fah)
         print 'Temperature = {:0.1f}C'.format(temperature)
         print 'Humidity = {:0.1f}%'.format(humidity)
+        print 'Dew Point = {:0.1f}C'.format(dewPoint)
+        print 'Dew Point = {:0.1f}F'.format(dewPointf)
         print 'Pressure = {:0.2f}Pa'.format(pressure)
         print 'Pressure = {:0.0f}hPa'.format(hpa)
         print 'Pressure = {:0.2f}inHg'.format(inHg)
@@ -26,3 +30,4 @@ while True:
         print 'Sea Level Pressure = {:0.2f}inHg'.format(seaLeveli)
         print '----------------------'
         time.sleep(15)
+        continue
