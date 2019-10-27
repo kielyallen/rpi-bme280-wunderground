@@ -13,7 +13,7 @@ SCL to Pin 5 (GPIO 3)
 
 Using Adafruit BME280 driver: https://github.com/adafruit/Adafruit_Python_BME280
 
-**Notes:** i2c address was 0x76 for 5V version, Adafruit driver looks for 0x77.\
+**Notes:** i2c address was 0x76 for 5V version, Adafruit driver looks for 0x77.
 
 Before running `python setup.py install` to begin the Adafruit driver installation, line 30 in Adafruit_BME280.py (included in above BME280 driver) was changed from:\
 `BME280_I2CADDR = 0x77`\
