@@ -30,3 +30,15 @@ Replace the value for`elevation = 91.44` in bme280.py with your sensor's height 
 
 `python bme280.py`
 
+## Output Example
+`Temperature = 40.6F`\
+`Temperature = 4.8C`\
+`Humidity = 31.4%`\
+`Dew Point = -8.9C`\
+`Dew Point = 16.0F`\
+`Pressure = 102060.95Pa`\
+`Pressure = 1021hPa`\
+`Pressure = 30.14inHg`\
+`Sea Level Pressure = 1032hPa`\
+`Sea Level Pressure = 30.48inHg`\
+`----------------------`
