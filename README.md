@@ -1,5 +1,5 @@
-# rpi-sensors
-Raspberry Pi Weather/Atmospheric Sensors
+# rpi-bme280-wunderground
+Raspberry Pi Bosch BME 280 Wunderground PWS Uploader
 
 
 ## Bosch BME280 Temp/Humidity/Pressure Sensor
@@ -27,14 +27,16 @@ BME280 Datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets
 `python bme280.py <PWS Station Name> <PWS Station Key> <Elevation in Meters> <Pressure Calibration [0 is Default, can be blank]>`
 
 ## Output Example
-`Temperature = 40.6F`\
-`Temperature = 4.8C`\
-`Humidity = 31.4%`\
-`Dew Point = -8.9C`\
-`Dew Point = 16.0F`\
-`Pressure = 102060.95Pa`\
-`Pressure = 1021hPa`\
-`Pressure = 30.14inHg`\
-`Sea Level Pressure = 1032hPa`\
-`Sea Level Pressure = 30.48inHg`\
-`----------------------`
+`Thu Nov 21 00:36:12 2019`\
+`Temperature = 5.7C`\
+`Temperature = 42.2F`\
+`Humidity = 79.4%`\
+`Dew Point = 1.6C`\
+`Dew Point = 34.8F`\
+`Pressure = 100657.30Pa`\
+`Pressure = 1007hPa`\
+`Pressure = 29.72inHg`\
+`Sea Level Pressure = 1018hPa`\
+`Sea Level Pressure = 30.06inHg`\
+`200`\
+`success`\
