@@ -24,7 +24,7 @@ BME280 Datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets
 
 ## Usage
 
-`python bme280.py <PWS Station Name> <PWS Station Key> <Elevation in Meters> <Pressure Calibration [0 is Default, can be blank]>`
+`python bme280_wunderground.py <PWS Station Name> <PWS Station Key> <Elevation in Meters> <Pressure Calibration [0 is Default, can be blank]>`
 
 ## Output Example
 `Thu Nov 21 00:36:12 2019`\
