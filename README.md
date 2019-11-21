@@ -22,13 +22,9 @@ to\
 
 BME280 Datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf
 
-## Configuration
-
-Replace the value for`elevation = 91.44` in bme280.py with your sensor's height above sea level in meters.
-
 ## Usage
 
-`python bme280.py`
+`python bme280.py <PWS Station Name> <PWS Station Key> <Elevation in Meters> <Pressure Calibration [0 is Default, can be blank]>`
 
 ## Output Example
 `Temperature = 40.6F`\
