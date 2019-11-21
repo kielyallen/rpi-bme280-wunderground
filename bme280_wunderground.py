@@ -8,8 +8,8 @@ from Adafruit_BME280 import *
 bme = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
 # post to wunderground PWS
 api_url = 'https://rtupdate.wunderground.com/weatherstation/updateweatherstation.php'
-wun_station = sys.argv[1]
-wun_key = sys.argv[2]
+wun_station = sys.argv[1] # wunderground pws station name
+wun_key = sys.argv[2] # wunderground pws station key
 elevation = float(sys.argv[3]) # elevation above sea level in meters
 
 try:
@@ -21,7 +21,7 @@ def get_sensor_data():
         temperature = bme.read_temperature()
         humidity = bme.read_humidity()
         raw_pressure = (bme.read_pressure() + pressure_cal)
-        dewpoint = temperature - ((100 - humidity) / 5)
+        dewpoint = temperature - ((100 - humidity) / 5) # may not be accurate with lower humidity values
         pressure_hpa = raw_pressure / 100
         pressure_sea_hpa = pressure_hpa*(1-(0.0065*elevation)/(temperature+(0.0065*elevation)+273.15))**-5.257
         return {
