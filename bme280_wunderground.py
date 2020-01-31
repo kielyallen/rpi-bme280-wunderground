@@ -69,9 +69,9 @@ def wun_upload(wx_data):
             print ec
         except requests.exceptions.Timeout as et:
             print et
-        time.sleep(60)
 
 while True:
         wx_data = get_sensor_data()
         print_sensor_data(wx_data)
         wun_upload(wx_data)
+        time.sleep(60)
