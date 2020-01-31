@@ -7,7 +7,7 @@ from Adafruit_BME280 import *
 
 bme = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
 # post to wunderground PWS
-api_url = 'https://rtupdate.wunderground.com/weatherstation/updateweatherstation.php'
+api_url = 'http://rtupdate.wunderground.com/weatherstation/updateweatherstation.php'
 wun_station = sys.argv[1] # wunderground pws station name
 wun_key = sys.argv[2] # wunderground pws station key
 elevation = float(sys.argv[3]) # elevation above sea level in meters
