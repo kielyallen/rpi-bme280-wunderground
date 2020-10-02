@@ -87,7 +87,7 @@ def get_pm25():
         if data.pm_ug_per_m3(2.5) in range(0,12):
                 print ("AQI is GOOD\n")
         elif 12.1 < data.pm_ug_per_m3(2.5) < 35.4:
-                        print ("AQI is MODERATE\n")
+                print ("AQI is MODERATE\n")
         elif 35.5 < data.pm_ug_per_m3(2.5) < 55.4:
                 print ("AQI is UNHEALTHY FOR SENSITIVE GROUPS\n")
         elif 55.5 < data.pm_ug_per_m3(2.5) < 150.4:
